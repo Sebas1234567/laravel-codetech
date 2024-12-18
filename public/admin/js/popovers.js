@@ -1,0 +1,1 @@
+for(const element of document.querySelectorAll('[data-coreui-toggle="popover"]')){new coreui.Popover(element);}

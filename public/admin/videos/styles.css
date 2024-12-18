@@ -1,0 +1,132 @@
+.wrapper-upload {
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+
+.wrapper-upload header {
+    color: #6990F2;
+    font-size: 27px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.wrapper-upload .form {
+    height: 167px;
+    display: flex;
+    cursor: pointer;
+    margin: 15px 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px dashed #6990F2;
+}
+
+.form :where(i, p) {
+    color: #6990F2;
+}
+
+.form i {
+    font-size: 50px;
+}
+
+.form p {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.upload .row-upl {
+    margin-bottom: 10px;
+    background: #E9F0FF;
+    list-style: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0.5px;
+    margin-right: 0.5px;
+}
+
+.upload .row-upl:last-of-type{
+    margin-bottom: 0;
+}
+
+.upload .row-upl i {
+    color: #6990F2;
+    font-size: 30px;
+}
+
+.upload .details span {
+    font-size: 14px;
+}
+
+.progress-area .row-upl .content {
+    width: 100%;
+    margin-left: 15px;
+}
+
+.progress-area .details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    justify-content: space-between;
+}
+
+.progress-area .content .progress-bar {
+    height: 6px;
+    width: 100%;
+    margin-bottom: 4px;
+    background: #fff;
+    border-radius: 30px;
+}
+
+.content .progress-bar .progress {
+    height: 100%;
+    width: 0%;
+    background: #6990F2;
+    border-radius: inherit;
+}
+
+.uploaded-area, .progress-area {
+    max-height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.3) inset;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.uploaded-area.onprogress {
+    max-height: 150px;
+}
+
+.progress-area{
+    margin-bottom: 10px;
+}
+
+.uploaded-area::-webkit-scrollbar, .progress-area::-webkit-scrollbar {
+    width: 0px;
+}
+
+.uploaded-area .row-upl .content {
+    display: flex;
+    align-items: center;
+}
+
+.uploaded-area .row-upl .details {
+    display: flex;
+    margin-left: 15px;
+    flex-direction: column;
+}
+
+.uploaded-area .row-upl .details .size {
+    color: #404040;
+    font-size: 11px;
+}
+
+.uploaded-area i.fa-check {
+    font-size: 16px;
+}

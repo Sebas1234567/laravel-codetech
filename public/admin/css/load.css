@@ -1,0 +1,103 @@
+#preloader{
+    background: rgb(235, 237, 239);
+    height: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 999999;
+}
+#preloader.show-load{
+    animation: show-load 0.5s linear forwards;
+}
+#preloader.hide-load{
+    animation: hide-load 0.5s linear forwards;
+}
+#preloader.hide-load .cont-load{
+    display: none;
+}
+#preloader .dot{
+    position: relative;
+    display: inline-block;
+    padding: 25px 0;
+    height: 157px;
+    width: 50px;
+}
+#preloader .dot::before{
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ae17fb;
+    transform-origin: 50%;
+    animation: bounce 0.5s alternate infinite ease;
+}
+#preloader .dot:nth-child(1)::before{
+    background: #F75757;
+    animation-delay: 0s;
+}
+#preloader .dot:nth-child(2)::before{
+    background: #B829A2;
+    animation-delay: -0.8s;
+}
+#preloader .dot:nth-child(3)::before{
+    background: #322BBA;
+    animation-delay: -1.6s;
+}
+#preloader .dot:nth-child(4)::before{
+    background: #F75757;
+    animation-delay: -2.4s;
+}
+#preloader .dot:nth-child(5)::before{
+    background: #B829A2;
+    animation-delay: -3.2s;
+}
+#preloader .dot:nth-child(6)::before{
+    background: #322BBA;
+    animation-delay: -4s;
+}
+#preloader .dot:nth-child(7)::before{
+    background: #F75757;
+    animation-delay: -4.8s;
+}
+#preloader .dot:nth-child(8)::before{
+    background: #B829A2;
+    animation-delay: -5.6s;
+}
+#preloader .dot:nth-child(9)::before{
+    background: #322BBA;
+    animation-delay: -6.4s;
+}
+@keyframes show-load {
+    to {
+        height: 100vh;
+    }
+}
+@keyframes hide-load {
+    from {
+        height: 100vh;
+    }
+    to {
+        height: 0;
+    }
+}
+@keyframes bounce{
+    0%{
+        top: 150px;
+        height: 5px;
+        border-radius: 60px 60px 20px 20px;
+        transform: scaleX(2);
+    }
+    35%{
+        height: 50px;
+        border-radius: 50%;
+        transform: scaleX(1);
+    }
+    100%{
+        top: 0;
+    }
+}
